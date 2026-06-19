@@ -1,83 +1,143 @@
-# Easy Event Hire — Website
 
-**Student:** Lithemba Makhohliso  
-**Module:** WEDE (Web Development)  
-**Part:** 3 (Final Submission)
+Website project proposal
 
-## Project Overview
-A multi-page website for Easy Event Hire, a local event equipment hire business based in Gqeberha (Port Elizabeth), Eastern Cape.
+1.Organization overview
 
-## Pages
-- `index.html` — Home page with hero, services preview, FAQ accordion
-- `about.html` — About the business, mission, values, team
-- `services.html` — Full services listing with search/filter and gallery lightbox
-- `enquiry.html` — Quote enquiry form with instant price calculator
-- `contact.html` — General contact form with map embed
+Name of the organization: Easy Event Hire
 
-## Technologies Used
-- HTML5, CSS3, Vanilla JavaScript (ES6+)
-- Google Fonts (Poppins, Open Sans)
-- Google Maps Embed API
-- IntersectionObserver API for scroll animations
+Easy event hire is a small company business that provides the equipment for different types of events such as Wedding, Funeral, Traditional gatherings. The company offers products like Mobile Fridge, Tent, Chairs and Sound System to help the customers to organize their successful events.
 
----
+This company was created to make event planning easy and more convenient by providing all the needed equipment in one place. Easy Event Hire focuses on delivering a reliable and affordable event services to the local community.
 
-## Changelog
+Mission:
 
-### Part 3 Additions (2026-06-18)
+Is to provide Quality and affordable event equipment to the customers.
 
-#### JavaScript Enhancements (Section 2)
-- **Hamburger/mobile navigation**: Added a responsive hamburger button (`main.js`) that toggles the nav on screens under 768px using `classList.toggle`.
-- **Active nav link**: JavaScript checks `location.href` against each nav link and adds an `active` class to highlight the current page.
-- **Scroll fade-in animations**: Used `IntersectionObserver` to apply `.visible` class to `.fade-in` elements as they enter the viewport, creating smooth scroll animations.
-- **FAQ Accordion (`index.html`)**: Built a fully accessible accordion component. Clicking a question expands the answer; clicking again or clicking a different question collapses it. Uses `max-height` CSS transition for smooth animation.
-- **Gallery with Lightbox (`services.html`)**: Implemented a custom lightbox modal on the Services page. Clicking a gallery item opens a full overlay with the image caption. Supports keyboard (Escape to close), click-outside-to-close, and ARIA roles for accessibility.
-- **Service Search Filter (`services.html`)**: Added a live text search input that filters service cards by matching the query against `data-keywords` attributes and card titles using JavaScript `includes()`. Shows a "no results" message when no cards match, and a clear button appears when a query is active.
-- **Quote Calculator (`enquiry.js`)**: On valid enquiry form submission, JavaScript reads the selected service, guest count, and date to dynamically calculate base price, VAT (15%), and total using a pricing lookup object (`PRICING`). Results are injected into a styled quote breakdown panel with `textContent` assignments.
-- **`mailto:` compilation (`contact.js`)**: On valid contact form submission, JavaScript builds a formatted email body and subject from form fields and opens the user's mail client via `window.location.href = 'mailto:...'` with all fields pre-populated.
+Vision:
 
-#### SEO Improvements (Section 3)
-- Added descriptive `<title>` tags to every page (includes page name, brand, location).
-- Added `<meta name="description">` to every page with relevant, keyword-rich descriptions.
-- Added `<meta name="keywords">` to every page with locally relevant keywords (Gqeberha, Port Elizabeth, Eastern Cape).
-- Added `<meta name="robots" content="index, follow">` to all pages.
-- Added `<meta name="author">` to all pages.
-- Added `<link rel="canonical">` to every page to prevent duplicate content.
-- Added Open Graph meta tags (`og:title`, `og:description`, `og:type`, `og:url`) to `index.html`.
-- Ensured all pages use correct heading hierarchy: one `<h1>` per page, followed by `<h2>` and `<h3>` as needed.
-- All images use descriptive `alt` text.
-- All URLs are clean and descriptive (e.g. `services.html`, `enquiry.html`).
-- Added internal linking between all pages via navigation and in-page CTAs.
-- Created `robots.txt` with crawl instructions and sitemap reference.
-- Created `sitemap.xml` listing all 5 pages with `<loc>`, `<lastmod>`, `<changefreq>`, and `<priority>`.
-- CSS uses Google Fonts via CDN (preconnected), minimising render-blocking.
-- Used `loading="lazy"` on the Google Maps iframe for faster page load.
-- Added `prefers-reduced-motion` media query in CSS to respect accessibility settings.
-- Responsive design confirmed: fluid grid, mobile nav, and form layout adjustments at 768px.
+To become a trusted and leading event hire company in our community.
 
-#### Form Functionality and Validation (Section 4)
+Target Audience:
 
-**enquiry.html / enquiry.js:**
-- Form collects: full name, email, phone, event date, service type, expected guests, venue, additional notes.
-- HTML5 `required`, `type="email"`, `type="tel"`, `type="date"`, `min`/`max` attributes provide browser-level hints.
-- JavaScript validation (`validate()` function) checks: name ≥ 2 chars, email regex (`/^[^\s@]+@[^\s@]+\.[^\s@]+$/`), phone regex (9–15 digits/characters), event date must be in the future, service must be selected, guests between 1–2000.
-- On validation failure: specific `error-msg` spans are shown next to each invalid field; the field receives an `.error` CSS class (red border).
-- On success: `buildQuote()` calculates price using the `PRICING` object and scales cost for extra guests. Populates a quote result panel with all fields. A success confirmation banner is shown.
-- Form uses `e.preventDefault()` to prevent default page reload.
+Individuals hosting weddings and parties
 
-**contact.html / contact.js:**
-- Form collects: full name, email, phone, message type (select), message text.
-- JavaScript validation: name ≥ 2 chars, email regex, phone regex (9–15 digits), message type required, message ≥ 10 characters.
-- On validation failure: inline error messages displayed per field.
-- On success: JavaScript compiles form data into a `mailto:` URI with a pre-formatted email body and subject line, then opens the user's mail client via `window.location.href`. The form is reset and a success message is displayed.
+Families organizing events
 
-#### Bug Fixes from Part 2 Feedback
-- Fixed broken internal link in `enquiry.html` and `services.html` where `service.html` was referenced instead of `services.html`.
-- Fixed unclosed `<label>` tag in original `enquiry.html` (label used as container for service input).
-- Fixed duplicate `<link rel="stylesheet">` in `services.html`.
-- Fixed `classs="..."` typo (triple 's') in `about.html`.
-- Fixed missing closing `</div>` tags in `index.html` (service-card div was unclosed).
-- Removed empty `<form>` element from `index.html`.
-- Fixed footer placement in `index.html` (was outside `<body>` closing properly).
-- Corrected `<body>` text-align override that was breaking layout.
-- Removed duplicate/invalid CSS selectors (`.service-page.service-card` blocks with no declarations).
+Small business and organization
+
+Website goals and objectives
+The main purpose of this website is to promote Easy Event Hire and attract more customers by providing clear information about the services and making it easy to contact our business.
+
+Specific Goals:
+
+Provide useful information to the customers.
+
+Promote available equipment and services.
+
+Increase website traffic.
+
+Key Performance (KPIs)
+
+Number of bookings received
+
+Number of website visitors
+
+Numbers of Enquiries received
+
+Customer engagement with our website
+
+3.Current Website Analysis:
+
+We don't have an existing website as an Easy event hire.
+
+Strengths:
+
+To build a website from the stretch
+
+Proposed Website Features and functionality:
+The website will have:
+
+Home page: that has overviewed of the company.
+
+About our page: background of the organization.
+
+Service page: List of our services available to hire.
+
+Enquiry page: where you fill out the form.
+
+Contact page: company contact details.
+
+Website Project Proposal 2
+
+1.Organization Overview
+
+Name of the organization: Community Care foundation
+
+The Community Care Foundation is a non-profit company that helps people with food, clothes, and support. It started as a small volunteer group and grew into a recognized company.
+
+This Community care foundation was created to support and make a positive impact by supporting those in need and encouraging community involvement through donations and volunteer work.
+
+Mission:
+
+To support people in need.
+
+Vision:
+
+Where everyone has met their basic needs.
+
+Website goals and objectives:
+
+Encourage donations.
+
+Raise awareness
+
+Recruit volunteers
+
+Key Performance:
+
+Number of visitors
+
+Number of donations received
+
+Sign-ups
+
+Proposed Website features
+
+The website will have:
+
+Home page
+
+About us
+
+Programs
+
+Donations
+
+Contact page
+
+Design and user experience
+
+This company website will focus on making it easy for users to find the information about our services and the company.
+
+
+Changelog
+
+CSS (styling and layout)
+
+
+A single stylesheet (style.css) is linked across all five pages — Home, About, Services, Enquiry, and Contact — so the site has one consistent look and feel.
+The brand colour scheme uses blue tones for the navigation bar, headings, and buttons, paired with white content cards on a light grey background for a clean, professional appearance.
+The navigation bar changes link colour on hover, giving visitors clear visual feedback as they browse.
+Flexbox is used on the page layout so the footer always sits at the bottom of the page, even on pages with little content.
+Lists, the enquiry form, and the map on the Contact page use rounded corners, padding, and subtle shadows for a card-style look that feels modern and easy to read.
+A media query adjusts the layout for screens 768px wide and narrower — stacking the navigation links, widening the form and list containers, and resizing headings — so the site stays usable on phones and tablets.
+
+
+JavaScript (form validation)
+
+
+A script.js file is linked to the Enquiry page to validate the "Request a Quote" form before it submits, since the form does not yet connect to a live server or database.
+The script checks that the full name and message fields are filled in, that the email address matches a valid email format, that the phone number contains only sensible characters, and that a service has been selected.
+If any field is missing or invalid, a clear message appears next to that field and it is highlighted, so the customer knows exactly what to fix.
+Once all fields pass validation, the customer sees an on-screen confirmation message thanking them for their enquiry.
+This reduces incomplete or incorrect enquiries reaching the business and gives customers immediate feedback while a full server-side booking system is still being planned.
