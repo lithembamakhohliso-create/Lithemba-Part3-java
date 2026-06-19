@@ -141,3 +141,9 @@ The script checks that the full name and message fields are filled in, that the 
 If any field is missing or invalid, a clear message appears next to that field and it is highlighted, so the customer knows exactly what to fix.
 Once all fields pass validation, the customer sees an on-screen confirmation message thanking them for their enquiry.
 This reduces incomplete or incorrect enquiries reaching the business and gives customers immediate feedback while a full server-side booking system is still being planned.
+
+
+
+In week 1 i did the structure of html website 
+in week 2 i did my css and style my website 
+In week 3 i did my javaScript
