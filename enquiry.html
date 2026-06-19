@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Free Quote – Easy Event Hire Gqeberha</title>
+  <meta name="description" content="Request a free event equipment quote from Easy Event Hire. Fill in your details and instantly see an estimated price for your event in Gqeberha.">
+  <meta name="keywords" content="event hire quote, free quote, tent hire price, Gqeberha event hire booking">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://easyeventhire.co.za/enquiry.html">
+  <link rel="stylesheet" href="./CSS/style.css">
+   <script src="https://cdn.jsdelivr.net/nmp/@emailjs/browser@4/dist/email.minjs"></script>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">🎪 Easy Event Hire</a>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="enquiry.html">Get a Quote</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <h1>Get a Free Quote</h1>
+    <p>Fill in your event details and we'll show you an instant price estimate</p>
+  </div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="form-wrapper fade-in">
+          <form id="enquiry-form" novalidate>
+            
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="eq-name">Full Name *</label>
+                <input type="text" id="eq-name" name="name" placeholder="Your full name"
+                       data-error="err-name" autocomplete="name" minlength="2" required>
+                <span class="error-msg" id="err-name"></span>
+              </div>
+              <div class="form-group">
+                <label for="eq-email">Email Address *</label>
+                <input type="email" id="eq-email" name="email" placeholder="you@example.com"
+                       data-error="err-email" autocomplete="email" required>
+                <span class="error-msg" id="err-email"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="eq-phone">Phone Number *</label>
+                <input type="tel" id="eq-phone" name="phone" placeholder="e.g. 0412528798"
+                       data-error="err-phone" autocomplete="tel" required>
+                <span class="error-msg" id="err-phone"></span>
+              </div>
+              <div class="form-group">
+                <label for="eq-date">Event Date *</label>
+                <input type="date" id="eq-date" name="date"
+                       data-error="err-date" required>
+                <span class="error-msg" id="err-date"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="eq-service">Service Required *</label>
+                <select id="eq-service" name="service" data-error="err-service" required>
+                  <option value="">— Select a service —</option>
+                  <option value="tent">Tents / Marquees</option>
+                  <option value="chairs">Chairs &amp; Tables</option>
+                  <option value="sound">Sound System</option>
+                  <option value="fridge">Mobile Fridge</option>
+                  <option value="tables">Tables (per 10)</option>
+                </select>
+                <span class="error-msg" id="err-service"></span>
+              </div>
+              <div class="form-group">
+                <label for="eq-guests">Expected Guests *</label>
+                <input type="number" id="eq-guests" name="guests" placeholder="e.g. 100"
+                       min="1" max="2000" data-error="err-guests" required>
+                <span class="error-msg" id="err-guests"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="eq-venue">Venue / Event Address</label>
+              <input type="text" id="eq-venue" name="venue" placeholder="Where is the event being held?">
+            </div>
+
+            <div class="form-group">
+              <label for="eq-message">Additional Notes</label>
+              <textarea id="eq-message" name="message" rows="4"
+                        placeholder="Any special requirements, specific items needed, or questions…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-blue" style="width:100%; padding:14px; font-size:1rem;">
+              Calculate My Quote →
+            </button>
+          </form>
+
+          <!-- Instant Quote Result -->
+          <div class="quote-result" id="quote-result">
+            <h3> Your Estimated Quote</h3>
+            <div class="quote-line"><span>Client</span><strong id="q-name">—</strong></div>
+            <div class="quote-line"><span>Service</span><strong id="q-service">—</strong></div>
+            <div class="quote-line"><span>Expected Guests</span><strong id="q-guests">—</strong></div>
+            <div class="quote-line"><span>Event Date</span><strong id="q-date">—</strong></div>
+            <div class="quote-line"><span>Hire Cost (excl. VAT)</span><strong id="q-base">—</strong></div>
+            <div class="quote-line"><span>VAT (15%)</span><strong id="q-vat">—</strong></div>
+            <div class="quote-line" style="font-size:1.05rem;"><span><strong>Total Estimate</strong></span><strong id="q-total" style="color:#1a56db;">—</strong></div>
+            <p style="margin-top:14px; font-size:0.88rem; color:#6b7280;">
+              * This is an estimate only. Final pricing is confirmed once we review your full requirements. Delivery fees may apply.
+            </p>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p> Ring Rd, Greenacres, Gqeberha &nbsp;|&nbsp;  <a href="tel:0412528798">041 252 8798</a> &nbsp;|&nbsp; ✉️ <a href="mailto:easyevent89@gmail.com">easyevent89@gmail.com</a></p>
+    <p class="footer-copy">&copy; 2026 Easy Event Hire — All Rights Reserved &nbsp;|&nbsp; Design: Lithemba Makhohliso</p>
+  </footer>
+
+  <script src="JavaScript/main.js"></script>
+  <script src="JavaScript/enquiry.js"></script>
+</body>
+</html>

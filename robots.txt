@@ -1,0 +1,5 @@
+# robots.txt – Easy Event Hire
+User-agent: *
+Allow: /
+Disallow: /js/
+Sitemap: https://easyeventhire.co.za/sitemap.xml
