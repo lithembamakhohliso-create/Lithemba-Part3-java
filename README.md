@@ -119,31 +119,3 @@ Design and user experience
 
 This company website will focus on making it easy for users to find the information about our services and the company.
 
-
-Changelog
-
-CSS (styling and layout)
-
-
-A single stylesheet (style.css) is linked across all five pages — Home, About, Services, Enquiry, and Contact — so the site has one consistent look and feel.
-The brand colour scheme uses blue tones for the navigation bar, headings, and buttons, paired with white content cards on a light grey background for a clean, professional appearance.
-The navigation bar changes link colour on hover, giving visitors clear visual feedback as they browse.
-Flexbox is used on the page layout so the footer always sits at the bottom of the page, even on pages with little content.
-Lists, the enquiry form, and the map on the Contact page use rounded corners, padding, and subtle shadows for a card-style look that feels modern and easy to read.
-A media query adjusts the layout for screens 768px wide and narrower — stacking the navigation links, widening the form and list containers, and resizing headings — so the site stays usable on phones and tablets.
-
-
-JavaScript (form validation)
-
-
-A script.js file is linked to the Enquiry page to validate the "Request a Quote" form before it submits, since the form does not yet connect to a live server or database.
-The script checks that the full name and message fields are filled in, that the email address matches a valid email format, that the phone number contains only sensible characters, and that a service has been selected.
-If any field is missing or invalid, a clear message appears next to that field and it is highlighted, so the customer knows exactly what to fix.
-Once all fields pass validation, the customer sees an on-screen confirmation message thanking them for their enquiry.
-This reduces incomplete or incorrect enquiries reaching the business and gives customers immediate feedback while a full server-side booking system is still being planned.
-
-
-
-In week 1 i did the structure of html website 
-in week 2 i did my css and style my website 
-In week 3 i did my javaScript
